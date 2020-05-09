@@ -16,13 +16,10 @@ ActiveRecord::Schema.define(version: 20200507014408) do
   enable_extension "plpgsql"
 
   create_table "shelters", force: :cascade do |t|
-    t.string "nammigration"
-    t.string "CreateShelters"
     t.string "name"
     t.string "address"
     t.string "city"
     t.string "state"
-    t.integer "zip"
+    t.string "zip"
   end
-
 end
