@@ -1,4 +1,4 @@
-require 'rails helper'
+require 'rails_helper'
 
 RSpec.describe "As a visitor" do
   describe "when I visit shelter show page" do
@@ -24,7 +24,7 @@ RSpec.describe "As a visitor" do
       fill_in "State", with: "WI"
       fill_in "Zip",   with: "53703"
 
-      click_button"Update Shelter"
+      click_button"Update"
 
       expect(current_path).to eq("/shelters/#{shelter_2.id}")
       expect(page).to have_content("Dane County Animal Shelter")
@@ -34,4 +34,4 @@ RSpec.describe "As a visitor" do
       expect(page).to have_content("53703")
     end
   end
-end                          
+end
