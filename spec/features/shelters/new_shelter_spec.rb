@@ -18,6 +18,8 @@ RSpec.describe "as a visitor" do
 
       expect(page).to have_link("New Shelter")
 
+      click_link"New Shelter"
+
       expect(current_path).to eq("/shelters/new")
 
       fill_in "Name",    with: "Lost Pets Rescue"
@@ -32,4 +34,4 @@ RSpec.describe "as a visitor" do
       expect(page).to have_link("Lost Pets Rescue")
     end
   end
-end 
+end
