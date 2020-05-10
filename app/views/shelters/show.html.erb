@@ -7,3 +7,4 @@
 <%= link_to "Back", "/shelters" %>
 
 <%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %><br/>
+<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete, data: {confirm: "Are you sure you want to delete this shelter?"} %>
